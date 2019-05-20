@@ -1,4 +1,13 @@
-#!/usr/bin/env groovy
+pipeline {
+    agent any
+    stages {
+        stage('global_build_statistics') {
+            steps {
+                echo "Build!"
+                sh 'java -version'
+              buildPlugin()
+            }
+        }
+    }
+}
 
-/* `buildPlugin` step provided by: https://github.com/jenkins-infra/pipeline-library */
-buildPlugin()
