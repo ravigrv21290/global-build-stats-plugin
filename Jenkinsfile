@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Build!"
                 sh 'java -version'
-              buildPlugin()
+              //buildPlugin()
             }
         }
     }
